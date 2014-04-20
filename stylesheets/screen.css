@@ -1,0 +1,354 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+.icons-normalSize-sprite, .icons-normalSize-google, .icons-normalSize-mobile, .icons-normalSize-nice, .icons-normalSize-phone, .icons-normalSize-setting {
+  background: url('/images/icons-normalSize-s9fbba0b24a.png') no-repeat;
+}
+
+.icons-normalSize-google {
+  background-position: 0 0;
+  height: 95px;
+  width: 269px;
+}
+
+.icons-normalSize-mobile {
+  background-position: 0 -233px;
+  height: 49px;
+  width: 30px;
+}
+
+.icons-normalSize-nice {
+  background-position: 0 -141px;
+  height: 50px;
+  width: 44px;
+}
+
+.icons-normalSize-phone {
+  background-position: 0 -192px;
+  height: 40px;
+  width: 40px;
+}
+
+.icons-normalSize-setting {
+  background-position: 0 -96px;
+  height: 44px;
+  width: 47px;
+}
+
+.icons-sprite, .icons-google, .icons-mobile, .icons-nice, .icons-phone, .icons-setting {
+  background: url('/images/icons-s570ae60e6b.png') no-repeat;
+}
+
+.icons-google {
+  background-position: 0 0;
+  height: 95px;
+  width: 269px;
+}
+
+.icons-mobile {
+  background-position: 0 -233px;
+  height: 49px;
+  width: 30px;
+}
+
+.icons-nice {
+  background-position: 0 -141px;
+  height: 50px;
+  width: 44px;
+}
+
+.icons-phone {
+  background-position: 0 -192px;
+  height: 40px;
+  width: 40px;
+}
+
+.icons-setting {
+  background-position: 0 -96px;
+  height: 44px;
+  width: 47px;
+}
+
+.icons2x-sprite, .icons2x-google, .icons2x-mobile, .icons2x-nice, .icons2x-phone, .icons2x-setting {
+  background: url('/images/icons2x-sbe412d96f5.png') no-repeat;
+}
+
+.icons2x-google {
+  background-position: 0 0;
+  height: 190px;
+  width: 538px;
+}
+
+.icons2x-mobile {
+  background-position: 0 -459px;
+  height: 98px;
+  width: 59px;
+}
+
+.icons2x-nice {
+  background-position: 0 -279px;
+  height: 99px;
+  width: 87px;
+}
+
+.icons2x-phone {
+  background-position: 0 -379px;
+  height: 79px;
+  width: 79px;
+}
+
+.icons2x-setting {
+  background-position: 0 -191px;
+  height: 87px;
+  width: 93px;
+}
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .icons-all-retina-sprites, .icons-google, .icons-mobile, .icons-nice, .icons-phone, .icons-setting {
+    background-image: url('/images/icons2x-sbe412d96f5.png');
+    -webkit-background-size: 269px auto;
+    -moz-background-size: 269px auto;
+    -o-background-size: 269px auto;
+    background-size: 269px auto;
+  }
+
+  .icons-google {
+    background-position: 0 0;
+  }
+
+  .icons-mobile {
+    background-position: 0 -229.5px;
+  }
+
+  .icons-nice {
+    background-position: 0 -139.5px;
+  }
+
+  .icons-phone {
+    background-position: 0 -189.5px;
+  }
+
+  .icons-setting {
+    background-position: 0 -95.5px;
+  }
+}
+.google-logo {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/google-logo.png?1397884023');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 447px;
+  height: 179px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.google-logo-svg {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/google-logo.png?1397884023');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 447px;
+  height: 179px;
+  background-image: none, url('/images/google-logo.svg?1397883994');
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+ul, body, html, li {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  color: white;
+  background-color: #00a688;
+  font-size: 22px;
+  line-height: 1.3;
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 479px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+a {
+  color: white;
+}
+
+.vertical {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  font-size: 3em;
+}
+
+ul.all {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+ul.all li {
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+ul.all a {
+  display: inline-block;
+  max-width: 100%;
+}
+ul.all div {
+  font-size: 8em;
+  max-width: 100%;
+}
+ul.all h1 {
+  font-size: 2.5em;
+}
+ul.all h2 {
+  font-size: 2em;
+}
+ul.all h1, ul.all h2 {
+  margin-bottom: 0.5em;
+}
+ul.all pre {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.color-yellow {
+  color: yellow;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-white {
+  color: white;
+}
+
+.reply {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  padding: 3px 8px;
+  border-right: white 1px solid;
+  font-size: 1.5em;
+}
+.reply a {
+  text-decoration: none;
+}
+
+.text-shadow {
+  text-shadow: 0 0 0.3em rgba(0, 0, 0, 0.8);
+}
+
+.text-cubicStyle {
+  text-shadow: 1px 1px 0 #dddddd, 2px 2px 0 gainsboro, 3px 3px 0 #dadada, 4px 4px 0 #d9d9d9, 5px 5px 0 #d7d7d7, 6px 6px 0 #d5d5d5, 7px 7px 0 #d4d4d4, 8px 8px 0 #d2d2d2, 9px 9px 0 #d1d1d1, 10px 10px 0 #cfcfcf, 11px 11px 0 #cdcdcd, 12px 12px 0 #cccccc, 13px 13px 0 #cacaca, 14px 14px 0 #c9c9c9, 15px 15px 0 #c7c7c7, 16px 16px 1px rgba(0, 0, 0, 0.3), 17px 17px 10px rgba(0, 0, 0, 0.6);
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  left: 0;
+  right: 0;
+  display: flex;
+  border-top: #008c73 1px solid;
+  color: rgba(255, 255, 255, 0.6);
+  *zoom: 1;
+}
+.nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nav div {
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}

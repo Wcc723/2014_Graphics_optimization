@@ -1,0 +1,10 @@
+@mixin text-cubicStyle($lenght: 15,$rgb: #dfdfdf)
+	$all: ()
+	@for $i from 1 through $lenght
+		$all: append($all, append(#{$i}px #{$i}px 0 ,darken($rgb,$i/1.6)),comma)	
+	text-shadow: $all,$lenght+1px $lenght+1px 1px rgba(0,0,0,.3),$lenght+2px $lenght+2px 10px rgba(0,0,0,.6)
+
+@mixin replace-text-with-svg($image-name)
+	+replace-text-with-dimensions("#{$image-name}.png")
+	background-image: none, image-url("#{$image-name}.svg")
+	+background-size(contain)

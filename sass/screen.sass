@@ -1,0 +1,143 @@
+@import compass/reset
+@import compass
+@import mixin
+@import all-retina-sprites
+
+$background-color: #00a688
+$nav-height: 40px
+
+
+//Retina sprites demo
+//這一部分是普通的sass sprites
+$icons-normalSize-spacing: 1px
+$icons-normalSize-sprite-dimensions: true
+@import "icons-normalSize/*.png"
+@include all-icons-normalSize-sprites
+
+
+//這裡開始是retina sprites
+//先匯入一般的sprites
+$icons-spacing: 1px
+$icons-sprite-dimensions: true
+@import "icons/*.png"
+@include all-icons-sprites
+
+//接下來匯入一般的sprites
+$icons2x-spacing: 1px
+$icons2x-sprite-dimensions: true
+@import "icons2x/*.png"
+@include all-icons2x-sprites
+@include all-retina-sprites($icons-sprites, $icons2x-sprites)
+
+
+
+// SVG
+//這是普通的png 
+.google-logo
+	+replace-text-with-dimensions("google-logo.png")
+	+background-size(contain)
+//這是png + svg
+.google-logo-svg
+	+replace-text-with-svg(google-logo)
+
+
+
+ul,body,html,li
+	width: 100%
+	height: 100%
+	padding: 0
+	margin: 0
+body
+	overflow: hidden
+	color: white
+	background-color: $background-color
+	font-size: 22px
+	line-height: 1.3
+	@media screen and (max-width: 767px)
+		font-size: 14px
+	@media screen and (max-width: 479px)
+		font-size: 13px
+
+a
+	color: white
+
+.vertical
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	position: absolute
+	font-size: 3em
+
+ul.all
+	position: fixed
+	left: 0
+	right: 0
+	li
+		padding: 1em
+		+box-sizing(border-box)
+		width: 100%
+		height: 100%
+		display: flex
+		//float: left
+		align-items: center
+		justify-content: center
+		flex-direction: column
+	a
+		display: inline-block
+		max-width: 100%
+	div
+		font-size: 8em
+		max-width: 100%
+	h1
+		font-size: 2.5em
+	h2
+		font-size: 2em
+	h1,h2
+		margin-bottom: .5em
+	pre
+		margin-top: 1em
+		font-size: 1.2em
+.color-yellow
+	color: yellow
+.color-black
+	color: black
+.color-white
+	color: white
+.reply
+	position: fixed
+	left: 0
+	top: 0
+	z-index: 10
+	padding: 3px 8px
+	border-right: white 1px solid
+	font-size: 1.5em
+	a
+		text-decoration: none
+.text-shadow
+	text-shadow: 0 0 .3em rgba(black , .8)
+.text-cubicStyle
+	+text-cubicStyle
+
+.nav
+	position: fixed
+	bottom: 0
+	height: $nav-height
+	left: 0
+	right: 0
+	display: flex
+	border-top: darken($background-color, 5%) 1px solid
+	color: rgba(white, .6)
+	+pie-clearfix
+	div
+		width: 50%
+		height: 100%
+		float: left
+		text-align: center
+		line-height: $nav-height
+		cursor: pointer
+		
+
+
